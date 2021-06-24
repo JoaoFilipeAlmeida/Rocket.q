@@ -40,7 +40,7 @@
     height: 2rem;
 }
 
-/*QUESTION FORM*/
+/************ QUESTION FORM *************/
 
 #question-form h2{
     font-family: 'Poppins', sans-serif;
@@ -102,4 +102,73 @@
     padding: 0.8rem 2.4rem;
     
     line-height: 2.4rem;
+}
+
+
+/************ QUESTIONS *************/
+
+.question-wrapper{ /*Caixa cinza*/
+    background: var(--light-blue);
+    
+    margin: .8rem;
+
+    border-radius: 0  .8rem .8rem .8rem;
+
+    padding: 2.4rem;
+}
+
+.question-wrapper .question-content{ /*Ícone e texto*/
+    display: flex;
+    align-items: flex-start;
+}
+
+.question-wrapper .question-content .user{ /*Bolinha azul do ícone*/
+    background: var(--blue);
+    clip-path: circle();
+
+    padding: 1.4rem;
+}
+
+.question-wrapper .question-content p{ /*Texto da pergunta*/
+    margin-left: 1.6rem;
+
+    /*Se colocar uma palavra grande ela não vai sair do layout, vai ter quebra de linha*/
+    word-break: break-word;
+    
+    display: flex;
+    align-items: center;
+    
+    /*Se o texto passar de 55px, ele vai crescer mas sempre alinhado ao ícone*/
+    min-height: 5.5rem;
+}
+.question-wrapper .actions{ /*Botões da caix. de pergunta*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.question-wrapper .actions > a{
+    display: flex;
+    align-items: center;
+}
+
+.question-wrapper .actions > a > img{
+    margin-right: .8rem;
+}
+
+/*O seletor "+" é usado para indicar que quero o irmão 
+" .question-wrapper .actions > a + a = Vai em "actions" pega o "a" e aplica no irmão "a" do primeiro "a".*/
+.question-wrapper .actions > a + a{
+    margin-left: 2.4rem;
+}
+
+
+/****** READ - Caixa marcada como lida ******/
+
+.question-wrapper.read{ /*Cor de fundo*/
+    background: var(--grey-medium);
+}
+
+.question-wrapper.read .question-content .user{ /*Cor de fundo do ícone*/
+background: var(--grey-blue);
 }
