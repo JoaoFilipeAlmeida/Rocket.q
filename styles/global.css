@@ -9,6 +9,7 @@
 html{
     --black: #0D114F;
     --white: #FAFAFA;
+    --red: #E83F5B;
     --light-blue: #E0ECFF;
     --blue: #3485FF;
     --background: #F6FAFF;
@@ -108,4 +109,16 @@ button.outlined,
     background: var(--white);
     color: var(--blue);
     border: 0.2rem solid var(--blue);
+}
+
+button.red,
+.button.red{
+    background: var(--red);
+    color: var(--white);
+}
+
+button.grey,
+.button.grey{
+    background: var(--grey-light);
+    color: var(--grey-dark);
 }

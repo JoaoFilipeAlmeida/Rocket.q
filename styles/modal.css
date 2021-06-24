@@ -1,0 +1,75 @@
+.modal-wrapper{
+    display: flex;
+    position: fixed;
+
+    width: 100vw;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+
+    background: rgba(4, 9, 17, 0.8);
+}
+
+.modal-wrapper .modal{
+    /*Ele vai ficar de ínicio em 59rem, quando chegar a ser maior que 
+90%, ele para e só fica permitindo 90%*/
+    width: min(59rem, 90%);
+
+    padding: 6.4rem;
+
+    background: var(--white);
+
+    margin: auto;
+
+    border-radius: .8rem;
+
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.modal-wrapper .modal h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    margin-bottom: 1.2rem;
+
+    color: var(--black);
+}
+
+.modal-wrapper .modal p{
+    margin-bottom: 2.4rem;
+    
+    color: var(--grey-dark);
+
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.modal-wrapper .modal input{
+    margin-bottom: 4rem;
+
+    padding: 1.3rem 1.6rem;
+
+    width: min(70%, 30.2rem);
+
+    border: .2rem solid var(--blue);
+
+    outline: none;
+}
+
+/*Botões do modal*/
+.modal-wrapper .modal .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-wrapper .modal .buttons > .button{
+    margin-right: .8rem;
+}
+
+.modal-wrapper .modal .buttons > button,
+.modal-wrapper .modal .buttons > .button{
+    padding: 1.3rem 3.2rem;
+}
